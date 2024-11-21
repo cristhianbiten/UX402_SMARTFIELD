@@ -1,0 +1,76 @@
+<mvc:View
+    controllerName="student10.com.sap.training.ux402.smartfield.ux402smartfield.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:form="sap.ui.layout.form"
+    xmlns:smartfield="sap.ui.comp.smartfield"
+    xmlns:smartform="sap.ui.comp.smartform"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <content>
+            <smartform:SmartForm
+                id="smartForm"
+                flexEnabled="false"
+                editTogglable="true"
+                title="Flight Data"
+            >
+                <smartform:layout>
+                    <smartform:ColumnLayout
+                        id="ColumnLayout1"
+                        columnsL="2"
+                        columnsM="2"
+                    />
+                </smartform:layout>
+                <smartform:Group
+                    title="Price"
+                    id="group1"
+                >
+                    <smartform:GroupElement id="element1">
+                        <smartfield:SmartField
+                            id="idPrice"
+                            value="{Price}"
+                        />
+                    </smartform:GroupElement>
+                </smartform:Group>
+                <smartform:Group
+                    title="Payment"
+                    id="group2"
+                >
+                    <smartform:GroupElement id="element2">
+                        <smartfield:SmartField
+                            id="idPaymentsum"
+                            value="{Paymentsum}"
+                        />
+                    </smartform:GroupElement>
+                </smartform:Group>
+                <smartform:Group
+                    title="Plane"
+                    id="group3"
+                >
+                    <smartform:GroupElement id="element3">
+                        <smartfield:SmartField
+                            id="idPlanetype"
+                            value="{Planetype}"
+                        />
+                    </smartform:GroupElement>
+                    <smartform:GroupElement id="element4">
+                        <smartfield:SmartField
+                            id="idSeatsmax"
+                            value="{Seatsmax}"
+                        />
+                    </smartform:GroupElement>
+                    <smartform:GroupElement id="element5">
+                        <smartfield:SmartField
+                            id="idSeatsocc"
+                            value="{Seatsocc}"
+                        />
+                    </smartform:GroupElement>
+                </smartform:Group>
+            </smartform:SmartForm>
+        </content>
+    </Page>
+</mvc:View>
